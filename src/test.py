@@ -25,6 +25,5 @@ with torch.no_grad():
         total += labels.size(0)
         correct += (predicted == labels).sum().item()
 
-# 计算准确率
 acc = 100 * correct / total
 print(acc)
